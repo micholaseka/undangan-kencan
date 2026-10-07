@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#150826" />
+    <meta
+      name="description"
+      content="Undangan kencan spesial — sebuah ajakan romantis yang dibuat khusus untukmu."
+    />
+    <title>Undangan Kencan Romantis 💜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Aurora background -->
+    <div class="aurora" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="grain"></span>
+    </div>
+
+    <!-- Floating hearts layer -->
+    <div class="hearts" id="heartsLayer" aria-hidden="true"></div>
+
+    <main class="container">
+      <!-- Card utama undangan -->
+      <article class="card">
+        <header class="card-header">
+          <p class="eyebrow">Undangan bwat sayangku</p>
+          <h1 class="title">
+            <span class="title-top">Undangan</span>
+            <span class="title-script">ke Sali</span>
+          </h1>
+          <p class="subheader">Ayo nek sali bar pkl pub.</p>
+        </header>
+
+        <!-- Detail kencan -->
+        <section class="card-body" aria-label="Detail kencan">
+          <ul class="details">
+            <li class="detail-item">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4.5" width="18" height="16.5" rx="3" />
+                  <path d="M8 2.5v4M16 2.5v4M3 9.5h18" />
+                  <path
+                    d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"
+                  />
+                </svg>
+              </span>
+              <span class="detail-text">
+                <span class="label">Tanggal</span>
+                <span class="value">8 Oktober 2026</span>
+              </span>
+            </li>
+            <li class="detail-item">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7.5V12l3 2" />
+                </svg>
+              </span>
+              <span class="detail-text">
+                <span class="label">Waktu</span>
+                <span class="value">Bar ko sekolah</span>
+              </span>
+            </li>
+            <li class="detail-item">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 21s-6.5-5.3-6.5-10.2A6.5 6.5 0 0 1 12 4.3a6.5 6.5 0 0 1 6.5 6.5C18.5 15.7 12 21 12 21z"
+                  />
+                  <circle cx="12" cy="10.6" r="2.4" />
+                </svg>
+              </span>
+              <span class="detail-text">
+                <span class="label">Tempat</span>
+                <span class="value">sali mbandung kae</span>
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Tombol aksi -->
+        <footer class="card-actions">
+          <button
+            class="btn btn-no"
+            id="noGakMawBtn"
+            type="button"
+            aria-label="Tidak mau ke kencan"
+          >
+            gakmaw
+          </button>
+          <button
+            class="btn btn-yes"
+            id="yesBtn"
+            type="button"
+            aria-label="Ya, saya mau ke kencan"
+          >
+            Yess maw
+          </button>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Loading overlay (1 detik) -->
+    <div class="loading-overlay" id="loadingOverlay" aria-hidden="true">
+      <div class="loading-inner" role="status" aria-live="polite">
+        <div class="loading-heart">
+          <svg viewBox="0 0 32 30" aria-hidden="true">
+            <defs>
+              <linearGradient id="heartGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff4d8d" />
+                <stop offset="55%" stop-color="#e879f9" />
+                <stop offset="100%" stop-color="#8b5cf6" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M16 29C6.5 21.5 0 16.4 0 9.8 0 4.4 4.4 0 9.8 0 12.6 0 14.9 1.3 16 3.4 17.1 1.3 19.4 0 22.2 0 27.6 0 32 4.4 32 9.8c0 6.6-6.5 11.7-16 19.2z"
+              fill="url(#heartGrad)"
+            />
+          </svg>
+        </div>
+        <p class="loading-text">Menyiapkan kejutan…</p>
+        <div class="loading-track"><span class="loading-fill"></span></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
